@@ -17,9 +17,7 @@ def main():
     fileAGroup = parser.add_argument_group(
         "File A Info",
     )
-    fileAGroup.add_argument(
-        "FileA", action="store", help="CSV file A to compare against file B."
-    )
+    fileAGroup.add_argument("FileA", action="store", help="Path to CSV file A.")
     fileAGroup.add_argument(
         "ColA",
         action="store",
@@ -29,7 +27,7 @@ def main():
     fileBGroup.add_argument(
         "FileB",
         action="store",
-        help="CSV file B to compare against file A.",
+        help="Path to CSV file B.",
     )
     fileBGroup.add_argument(
         "ColB",
